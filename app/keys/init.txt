@@ -1,0 +1,33 @@
+生成keystore签名
+keytool -genkey -alias flypeso -keyalg RSA -validity 10000 -keystore flypeso.keystore
+这里关键文字的代表意义：
+flypeso：keystore的别名alias
+10000：keystore的有效天数
+flypeso.keystore：keystore的名称
+
+查看keystore的签名
+keytool -list -v -keystore flypeso.keystore -storepass  flypeso
+
+keytool -exportcert -alias vithan -keystore ./flypeso.keystore| openssl sha1 -binary | openssl base64
+
+keytool -importkeystore -srckeystore flypeso.keystore -srcstoretype JKS -deststoretype PKCS12 -destkeystore flypeso.p12
+keytool -v -importkeystore -srckeystore flypeso.p12 -srcstoretype PKCS12 -destkeystore flypeso.jks -deststoretype JKS
+密码:flypeso
+keytool -v -importkeystore -srckeystore flypeso.p12 -srcstoretype PKCS12 -destkeystore flypeso.keystore -deststoretype JKS
+
+
+java -jar pepk.jar --keystore=flypeso.keystore --alias=flypeso --output=output.zip --include-cert --encryptionkey=eb10fe8f7c7c9df715022017b00c6471f8ba8170b13049a11e6c09ffe3056a104a3bbe4ac5a955f4ba4fe93fc8cef27558a3eb9d2a529a2092761fb833b656cd48b9de6a
+
+flypeso
+包名:com.vcash.vaytien.online.vn
+
+证书指纹:
+         SHA1: 33:AD:83:7B:9A:5F:D4:8C:BF:7F:62:B7:64:A9:1A:4D:92:CB:0D:29
+         SHA256: 80:C0:B6:57:64:F5:D8:D6:89:89:B6:BC:D1:72:7F:98:0D:50:CB:E3:55:63:DB:5D:60:6B:B8:51:BB:30:32:BE
+
+facebook id获取key:Pz8/PwI/Nik/Rz9HGQ0K
+需要:
+1.google-services.json
+2.facebookId
+3.kochaveKey
+4.添加包名到liveness，生产测试都要
