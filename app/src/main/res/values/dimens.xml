@@ -1,3 +1,12 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="banner_dime">5dp</dimen>
+    <dimen name="dime_little">2dp</dimen>
+    <dimen name="dime_small">5dp</dimen>
+    <dimen name="dime_center">15dp</dimen>
+    <dimen name="dime_large">20dp</dimen>
+    <dimen name="up_down_dime">10dp</dimen>
+    <dimen name="grant_height">420dp</dimen>
+    <dimen name="grant_info_height">240dp</dimen>
+    <dimen name="grant_info_back_height">320dp</dimen>
 </resources>

@@ -1,5 +1,8 @@
 package org.liufree.xmindparser;
 
+import org.apache.commons.compress.archivers.ArchiveException;
+import org.apache.commons.compress.archivers.examples.Expander;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -10,9 +13,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-
-import org.apache.commons.compress.archivers.ArchiveException;
-import org.apache.commons.compress.archivers.examples.Expander;
 
 /**
  * @author liufree

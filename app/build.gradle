@@ -3,17 +3,18 @@ plugins {
 }
 
 android {
-    namespace 'com.luoxianjun.leanplay'
+    namespace 'com.luoxianjun.studyplan'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.luoxianjun.leanplay"
+        applicationId "com.luoxianjun.studyplan"
         minSdk 25
         targetSdk 32
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "TAG", '"StudyPlan"'
     }
     // 增加自动签名的内容
     signingConfigs {

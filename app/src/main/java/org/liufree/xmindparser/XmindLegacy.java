@@ -1,6 +1,10 @@
 package org.liufree.xmindparser;
 
-import org.dom4j.*;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.DocumentHelper;
+import org.dom4j.Element;
+import org.dom4j.Node;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.XML;

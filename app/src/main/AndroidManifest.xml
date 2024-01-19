@@ -13,13 +13,13 @@
         android:theme="@style/Theme.LeanPlay"
         tools:targetApi="31">
         <activity
-            android:name=".ChineseInfoActivity"
+            android:name=".activity.ChineseInfoActivity"
             android:exported="false"
             android:label="@string/title_activity_chinese_info"
             android:theme="@style/Theme.LeanPlay.NoActionBar">
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

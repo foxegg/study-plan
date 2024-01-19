@@ -2,6 +2,13 @@ package org.liufree.xmindparser;
 
 import android.util.Log;
 
+import com.alibaba.fastjson.JSON;
+
+import org.apache.commons.compress.archivers.ArchiveException;
+import org.dom4j.DocumentException;
+import org.json.JSONException;
+import org.liufree.xmindparser.pojo.JsonRootBean;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,13 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-
-import com.alibaba.fastjson.JSON;
-
-import org.apache.commons.compress.archivers.ArchiveException;
-import org.dom4j.DocumentException;
-import org.json.JSONException;
-import org.liufree.xmindparser.pojo.JsonRootBean;
 
 /**
  * @author liufree liufreeo@gmail.com
