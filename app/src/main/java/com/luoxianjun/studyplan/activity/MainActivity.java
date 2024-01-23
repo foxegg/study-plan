@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.TextView;
 
 import com.luoxianjun.studyplan.R;
+import com.luoxianjun.studyplan.utils.ForegroundProcess;
 import com.luoxianjun.studyplan.views.HomeListView;
 
 import org.liufree.xmindparser.XmindParser;
@@ -48,6 +49,7 @@ public class MainActivity extends InitActivity implements AdapterView.OnItemClic
         initAssetNameLists();
         initListView(0);
         listView.setOnItemClickListener(this);
+        Log.i("luolaigang", ForegroundProcess.getForegroundApp());
     }
 
     @Override
